@@ -11,7 +11,7 @@
 🧩 **Step 1**: Extract APK using APKTool
 ``` apktool d fancade.apk -o fancade_src ```
 🛠 **Step 2**: Edit your elements
-> Do it **manually**: Go to the fancade_src/assets/ or res/raw/ folder, replace the audio file with the same name and format.
+> Do it **manually**: Go to the `fancade_src/assets/` or `res/raw/` folder, replace the audio file with the same name and format.
 📦 **Step 3**: Repackage the APK
 ```apktool b fancade1.0_src -o fancade_new_unsigned.apk```
 🔐 **Step 4** Create keystore mykey.keystore
