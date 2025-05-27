@@ -89,7 +89,7 @@
 ``` "C:\Users\<your-username>\AppData\Local\Android\Sdk\build-tools\36.0.0\apksigner.bat" sign --ks mykey.keystore --out fancade_new.apk fancade_new_unsigned.apk ```
 
 
-> Note: edit <your-username>
+> Note: edit "your-username".
 
 
 # And now your APK is ready! Thank you for reading my page. Hope this helps!
