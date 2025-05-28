@@ -11,7 +11,9 @@
 🧩 **Step 1**: Extract APK using APKTool
 
 
-``` apktool d fancade.apk -o fancade_src ```
+``` 
+apktool d fancade.apk -o fancade_src
+ ```
 
 
 🛠 **Step 2**: Edit your elements
@@ -23,13 +25,17 @@
 📦 **Step 3**: Repackage the APK
 
 
-```apktool b fancade1.0_src -o fancade_new_unsigned.apk```
+```
+apktool b fancade1.0_src -o fancade_new_unsigned.apk
+```
 
 
 🔐 **Step 4** Create keystore mykey.keystore
 
 
-``` keytool -genkey -v -keystore mykey.keystore -alias myalias -keyalg RSA -keysize 2048 -validity 10000 ```
+``` 
+keytool -genkey -v -keystore mykey.keystore -alias myalias -keyalg RSA -keysize 2048 -validity 10000
+```
 
 
 📌 **Parameter explanation**:
@@ -71,7 +77,9 @@
 *Method 1*: Use jarsigner (older)
 
 
-```jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore mykey.keystore fancade_new_unsigned.apk myalias```
+```
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore mykey.keystore fancade_new_unsigned.apk myalias
+```
 
 
 > The signed APK is still **fancade_new_unsigned.apk**
@@ -80,13 +88,17 @@
 *Method 2*: Use apksigner (recommended)
 
 
-``` apksigner sign --ks mykey.keystore --out fancade_new.apk fancade_new_unsigned.apk ```
+``` 
+apksigner sign --ks mykey.keystore --out fancade_new.apk fancade_new_unsigned.apk
+ ```
 
 
 > Note: if CMD doesn't find APKSigner, use the command:
 
 
-``` "C:\Users\<your-username>\AppData\Local\Android\Sdk\build-tools\36.0.0\apksigner.bat" sign --ks mykey.keystore --out fancade_new.apk fancade_new_unsigned.apk ```
+``` 
+"C:\Users\<your-username>\AppData\Local\Android\Sdk\build-tools\36.0.0\apksigner.bat" sign --ks mykey.keystore --out fancade_new.apk fancade_new_unsigned.apk
+```
 
 
 > Note: edit "your-username".
