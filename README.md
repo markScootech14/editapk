@@ -17,6 +17,8 @@ apktool d fancade.apk -o fancade_src
 
 
 > Note: Can use **7Zip** to extract!
+
+
 🛠 **Step 2**: Edit your elements
 
 
