@@ -34,6 +34,8 @@ apktool b fancade_src -o fancade_new_unsigned.apk
 
 
 > Note: If you using **7ZIP** to extract, you can **compress to .ZIP** and then **rename to .APK**.
+
+
 🔐 **Step 4** Create keystore mykey.keystore
 
 
