@@ -29,7 +29,7 @@ apktool d fancade.apk -o fancade_src
 
 
 ```
-apktool b fancade1.0_src -o fancade_new_unsigned.apk
+apktool b fancade_src -o fancade_new_unsigned.apk
 ```
 
 
